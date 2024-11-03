@@ -19,3 +19,90 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.navbar {
+  width: 100%;
+  background-color: rgb(34, 34, 104);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: large;
+  border-bottom: 2px solid black;
+}
+
+.barLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbarBtn {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  display: none;
+}
+.list {
+  display: flex;
+  gap: 10px;
+}
+.list li:hover {
+  color: aqua;
+}
+.shortMenu {
+  width: 50%;
+  background-color: rgb(34, 34, 104);
+  color: white;
+  padding: 10px;
+  border-radius: 0px 0px 10px;
+}
+.list2 li {
+  margin: 10px;
+}
+
+.homeDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(150, 64, 64);
+}
+.homeHeading {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+.aboutDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(137, 137, 158);
+}
+.galleryDiv {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-OUkQk9bTKIDRkKfSnH4YWy20UqAX6QyaxA&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.galleryHeading {
+  color: maroon;
+  text-align: center;
+  margin-top: 100px;
+  font-size: xx-large;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.contactDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(128, 105, 105);
+}
+@media screen and (max-width: 768px) {
+  .navbarBtn {
+    display: block;
+  }
+  .list {
+    display: none;
+  }
+}
